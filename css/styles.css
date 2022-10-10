@@ -1,22 +1,25 @@
 :root {
     --primary-background-color: #f5f5f5;
+    --secondary-color: #ffffff;
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
     --accent-color: #2196F3;
     --primary-font-family: 'Roboto', sans-serif;
     --logo-font-family: 'Raleway', sans-serif;
-    --index-color: #ff0000;
+    
 }
 
 body {
-    background-color: var(--primary-background-color);
+    background-color: var(--secondary-color);
     font-family: var(--primary-font-family);
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
 /* HEADER */
 
 header {
-    background-color: #ffffff;
+    background-color: var(--secondary-color);
 }
 
 .logo {
@@ -25,7 +28,7 @@ header {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
+    
 }
 
 .first {
@@ -44,7 +47,7 @@ header {
 
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
+    
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
@@ -52,7 +55,7 @@ header {
 
 .nav-link:hover,
 .nav-link:focus {
-    color: var(--index-color);
+    color: var(--accent-color);
 }
 
 .link.current {
@@ -62,24 +65,24 @@ header {
 
 .link.current:hover,
 .link.current:focus {
-    color: var(--index-color);
+    color: var(--accent-color);
 }
 
 .link-header-mail {
 
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
+    
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--accent-color);
+    color: var(--secondary-text-color);
 }
 
 .link-header-tel {
 
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
+    
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
@@ -88,22 +91,19 @@ header {
 
 .link-header-mail:hover,
 .link-header-mail:focus {
-    color: var(--index-color);
+    color: var(--accent-color);
 }
 
 .link-header-tel:hover,
 .link-header-tel:focus {
-    color: var(--index-color);
+    color: var(--accent-color);
 }
 
 /* HERO */
 
 .hero {
     background-color: #27303a;
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
+    
 }
 
 .hero-title {
@@ -113,7 +113,7 @@ header {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--secondary-color);
 }
 
 .request {
@@ -122,7 +122,7 @@ header {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--secondary-color);
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -130,8 +130,8 @@ header {
 
 .request:hover,
 .request:focus {
-    color: var(--index-color);
-    background: #ffa500;
+    color: var(--accent-color);
+    background: var(--secondary-color);
 }
 
 /* SECTION OUR ADVANTAGES */
@@ -141,40 +141,34 @@ header {
 }
 
 .adv-title {
-
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
+    
     text-transform: uppercase;
     color: var(--primary-text-color);
 }
 
 .text {
     font-weight: 400;
-    font-size: 14px;
+    
     line-height: 1.71;
-    letter-spacing: 0.03em;
+    
     color: var(--secondary-text-color);
 }
 
 /* SECTION OUR WORK */
 
 .work-title {
-
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    letter-spacing: 0.03em;
+    
 }
 
-.our-work img {
-    width: 370px;
-    height: 294px;
-    left: 1015px;
-    top: 1061px;
-    background: url(.jpg);
-}
+
 
 /* SECTION OUR TEAM */
 
@@ -183,18 +177,17 @@ header {
     background: #F5F4FA;
 }
 
-.team-title {
 
+.team-title {
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    letter-spacing: 0.03em;
+    
 }
 
 .team img {
-    width: 270px;
-    height: 260px;
-    background: url(.jpg);
+    
     border-radius: 0px
 }
 
@@ -203,7 +196,7 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
+    
 
 }
 
@@ -211,7 +204,7 @@ header {
 
     font-size: 16px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
+    
     color: var(--secondary-text-color);
 }
 
@@ -224,13 +217,13 @@ footer {
 address {
 
     font-style: normal;
-    font-size: 14px;
+    
     line-height: 1.71;
-    letter-spacing: 0.03em;
+    
 }
 
 .address-text {
-    color: #FFFFFF;
+    color: var(--secondary-color);
 }
 
 .link-touch {
@@ -240,7 +233,7 @@ address {
 
 .link-touch:hover,
 .link-touch:focus {
-    color: var(--index-color);
+    color: var(--accent-color);
 }
 
 .footer-first {
@@ -248,7 +241,7 @@ address {
 }
 
 .footer-last {
-    color: #ffffff;
+    color: var(--secondary-color);
 }
 
 
@@ -261,18 +254,22 @@ address {
     background: #E5E5E5;
 }
 
+.visually-hidden {
+    visibility: hidden;
+}
+
 .main,
 .filter-nav {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    letter-spacing: 0.03em;
+    
     border-radius: 4px;
 }
 
 .main {
-    color: #ffffff;
+    color: var(--secondary-color);
     background: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -286,14 +283,14 @@ address {
 
 .main:hover,
 .main:focus {
-    color: var(--index-color);
-    background: #ffa500;
+    color: var(--accent-color);
+    background: var(--secondary-color);
 }
 
 .filter-nav:hover,
 .filter-nav:focus {
-    color: var(--index-color);
-    background: #ffa500;
+    color: var(--accent-color);
+    background: var(--secondary-color);
 }
 
 .projects {
@@ -303,15 +300,12 @@ address {
 .conteiner {
     width: 370px;
     height: 404px;
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    background: var(--secondary-color);
+   
 }
 
-.projects img {
-    width: 370px;
-    height: 294px;
-    background: url(.jpg);
-}
+
+
 
 .title {
     font-family: var(--pimary-font-family);
@@ -327,14 +321,11 @@ address {
     font-family: var(--pimary-font-family);
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
+    
     color: var(--secondary-text-color);
 }
 .link-item {
     text-decoration: none;
 }
-.link-item :hover,
-.link-item :focus {
-     color: var(--index-color);
-}
+
 
